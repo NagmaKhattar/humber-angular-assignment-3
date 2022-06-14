@@ -1,0 +1,56 @@
+
+<form [formGroup]="form">
+    <div>
+        <label for="fname"> First name:</label><br>
+        <input formControlName="fname" type="text" id="fname" name="fname"> <br>
+    </div>
+    <div>
+        <label for="lname"> Last name:</label><br>
+        <input formControlName="lname" type="text" id="lname" name="lname"> <br>
+    </div>
+    <div>
+        <label for="address"> Address:</label><br>
+        <input formControlName="address" type="text" id="address" name="address"> <br>
+    </div>
+    <div>
+        <label for="city"> City:</label><br>
+        <input formControlName="city" type="text" id="city" name="city"> <br>
+    </div>
+    <div>
+        <label for="postalcode"> Postal code:</label><br>
+        <input formControlName= "postalcode" type="text" id="postalcode" name="postalcode"> <br>
+    </div>
+    <div>
+        Country: <br>
+       <select formControlName="country" id="country" name="country">
+           <option value="canada"> Canada </option>
+           <option value="US"> United States </option>
+       </select>
+    </div>
+    <div>
+        Payment Method: <br>
+       <select formControlName= "paymentmethod" id="paymentmethod" name="paymentmethod">
+           <option value="visa"> Visa </option>
+           <option value="mastercard"> Master Card </option>
+       </select>
+    </div>
+    <div>
+        <label for="creditcardnum"> Credit Card Number:</label><br>
+        <input formControlName="creditcardnum" type="text" id="creditcardnum" name="creditcardnum"> <br>
+    </div>
+    <div>
+        <label for="expiry"> Expiry:</label><br>
+        <input formControlName="expiry" type="text" id="expiry" name="expiry"> <br>
+    </div>
+    <div>
+        <label for="cvc"> CVC:</label><br>
+        <input formControlName="cvc" type="text" id="cvc" name="cvc"> <br>
+    </div>
+    <div>
+        <label for="nameoncard"> Name on Card:</label><br>
+        <input formControlName= "nameoncard" type="text" id="nameoncard" name="nameoncard"> <br>
+    </div>
+    <div>
+    <button (click)="submit()" >Submit</button>
+    </div>
+</form>
